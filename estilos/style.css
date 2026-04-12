@@ -167,14 +167,20 @@ div#skills h2{
   border-radius: 4px;
 }
 
-div#projetosp h2{
+div#projetosp{
+    background-color: lightgray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+div#projetosp,#projetosac h2{
     text-align: center;
 }
 
 div#projetos{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 div#fotos{
