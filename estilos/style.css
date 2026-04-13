@@ -219,8 +219,13 @@ div#descricao{
     padding: 10px;
 }
 
-
 summary a{
     text-decoration: none;
     color: black;
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
 }
