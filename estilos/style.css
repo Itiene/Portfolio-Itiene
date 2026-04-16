@@ -181,12 +181,12 @@ div#projetosp,#projetosac>h2{
     text-align: center;
 }
 
-div#projetos{
+.projetos{
     display: flex;
     flex-direction: column-reverse;
 }
 
-div#fotos{
+.fotos{
     margin: 10px;
     background-color: white;
     color: black;
@@ -199,7 +199,7 @@ div#fotos{
     transition: border-color 0.9s ease,border-width 0.9s ease;
 }
 
-div#fotos:hover{
+.fotos:hover{
     border-color: #66bbff;
     border-left-width: 15px;
     cursor: pointer;
@@ -211,7 +211,7 @@ div#fotos:hover{
     border-radius: 10px;
 }
 
-div#descricao{
+.descricao{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -223,7 +223,6 @@ summary a{
     text-decoration: none;
     color: black;
 }
-
 
 footer{
     background-color: black;
