@@ -228,3 +228,39 @@ footer{
     background-color: black;
     text-align: center;
 }
+
+div#contato{
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#contato p{
+    text-align: center;
+}
+
+div#contato form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 15vw;
+    margin: 10px;
+    color: black;
+    border-radius: 10px;
+}
+
+form>label{
+    text-align: start;
+}
+
+form>textarea{
+    margin: 10px;
+    padding: 20px;
+}
