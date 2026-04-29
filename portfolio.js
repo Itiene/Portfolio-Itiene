@@ -1,4 +1,4 @@
-const progresso=document.getElementsByClassName(".progresso")
+const progresso=document.getElementsByClassName("progresso")
 
 progresso.addEventListener("onload",(evt)=>{
     progresso.classList.toggle(".progresso")
