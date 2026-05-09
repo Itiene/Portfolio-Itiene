@@ -8,7 +8,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    background-color:#0A0B10;
+    background-color: #090D16;
     line-height: 1.5;
     color: white;
 }
@@ -54,8 +54,7 @@ nav p{
 
 main{
     background-color: #090D16;
-    min-height: 100vh;
-    scroll-behavior: auto;
+    min-height: 200vh;
 }
 
 div#introducao{
@@ -101,8 +100,8 @@ div#paragrafo section{
 button.botao{
     color: #e5e5e5;
     border: none;
-    border-radius: 10px;
-    padding: 12px 20px;
+    border-radius: 20px;
+    padding: 15px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -120,6 +119,7 @@ button#c{
 button.botao:hover{
     background-color: #2563eb;
     transform: translateY(-3px);
+    transition: .5s ease;
 }
 
 section h1{
@@ -135,6 +135,7 @@ section p{
     text-align: justify;
     line-height: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
 }
 
 
@@ -220,6 +221,8 @@ div#projetosp,#projetosac>h2{
 }
 
 .fotos:hover{
+    transform: translateY(-3px);
+    transition: .5s ease;
     cursor: pointer;
 }
 
@@ -253,7 +256,15 @@ div#contato{
     box-shadow: 0px 0px 10px rgba(79,124,255,0.15);
 }
 
-div#contato p{
+div#p-contato{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#p-contato p{
     text-align: center;
 }
 
@@ -267,33 +278,35 @@ div#redes-sociais{
 }
 
 
-nav#main{
-    display: flex;
-    justify-content: center;
-}
-
-nav#main ul{
-    list-style: none;
+nav#contato-nav{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: space-around;
     justify-content: space-around;
 }
 
-ul#links_main>li a{
+nav#contato-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+ul#links_nav>li a{
     text-decoration: none;
-    color: #1e1e1e;
     border-radius: 100%;
     padding: 7px;
-    background-color: red;
+    background-color: #0F131F;
+    margin: 3px;
 }
 
-ul#links_main>li a>i{
+ul#links_nav>li a>i{
     color: #e5e5e5;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-ul#links_main>li a>i:hover{
+ul#links_nav>li a>i:hover{
     transform: scale(1.3);
     transition: 0.4s ease;
 }
@@ -307,6 +320,7 @@ div#form{
     border-radius: 0px 10px 10px 0px;
     
 }
+
 
 div#contato form{
     position: relative;
@@ -357,6 +371,14 @@ footer{
     text-align: center;
 }
 
-@media screen and (min_width:180px){
-    
+@media screen and (min-width:180px) and (max-width: 768px){
+    div#introducao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#contato{
+        display: flex;
+        flex-direction: column;
+    }
 }
