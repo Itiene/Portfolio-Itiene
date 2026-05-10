@@ -384,15 +384,21 @@ footer{
     }
 
     nav#header ul{
+        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    ul#links_header>li a{
+        font-size: 0.9rem;
     }
 
     div#introducao{
         display: flex;
         flex-direction: column-reverse;
         min-height: auto;
-        padding: 20px;
+        padding: 40px 20px;
+        gap: 30px;
     }
 
     div#paragrafo{
@@ -410,7 +416,7 @@ footer{
 
     section p{
         font-size: 1rem;
-        line-height: 1.5;
+        line-height: 1.6;
     }
 
     .botoes{
@@ -425,9 +431,10 @@ footer{
 
     .imagen1{
         margin: 20px auto;
-        width: 80%;
+        width: 100%;
         height: auto;
         display: block;
+        max-width: 300px;
     }
 
     #skill-container{
@@ -452,6 +459,8 @@ footer{
     }
 
     .descricao{
+        padding: 20px;
+        gap: 10px;
         width: 100%;
     }
 
