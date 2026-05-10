@@ -371,22 +371,121 @@ footer{
     text-align: center;
 }
 
-@media screen and (min-width:180px) and (max-width: 768px){
+@media (max-width: 768px){
+
     body{
         font-size: 14px;
     }
-    main{
-        background-color: #090D16;
-        min-height: 200vh;
+
+    nav#header{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav#header ul{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     div#introducao{
         display: flex;
+        flex-direction: column-reverse;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    div#paragrafo{
+        padding: 20px;
+    }
+
+    div#paragrafo section{
+        text-align: center;
+    }
+
+    section h1{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    section p{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .botoes{
         flex-direction: column;
+        align-items: center;
+    }
+
+    button.botao{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .imagen1{
+        margin: 20px auto;
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+
+    #skill-container{
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        grid-template-columns: 1fr;
+    }
+
+    .projetos{
+        width: 100%;
+    }
+
+    .fotos{
+        width: 100%;
+    }
+
+    .foto{
+        width: 100%;
+        height: auto;
+    }
+
+    .descricao{
+        width: 100%;
     }
 
     div#contato{
         display: flex;
         flex-direction: column;
+        width: 95%;
+        min-height: auto;
+    }
+
+    div#redes-sociais{
+        border-radius: 10px 10px 0px 0px;
+        padding: 30px;
+    }
+
+    div#form{
+        border-radius: 0px 0px 10px 10px;
+        padding: 20px;
+    }
+
+    div#contato form{
+        width: 100%;
+    }
+
+    form input,textarea,button{
+        width: 100%;
+    }
+
+    form textarea{
+        padding: 20px;
+    }
+
+    footer{
+        padding: 20px;
+        font-size: 0.9rem;
     }
 }
