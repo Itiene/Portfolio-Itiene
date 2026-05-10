@@ -372,11 +372,14 @@ footer{
 }
 
 @media screen and (min-width:180px) and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
     main{
         background-color: #090D16;
         min-height: 200vh;
     }
-    
+
     div#introducao{
         display: flex;
         flex-direction: column;
