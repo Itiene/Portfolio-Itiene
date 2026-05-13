@@ -284,6 +284,11 @@ div#redes-sociais{
     justify-content: center;
 }
 
+div#redes-sociais p#titulo{
+    color: rgb(49, 49, 141);
+    font-size: 1.2rem;
+
+}   
 
 nav#contato-nav{
     display: flex;
@@ -353,6 +358,7 @@ form>textarea{
     width: 20vw;
     background-color: #090D16;
     border: none;
+    color: #e5e5e5;
 }
 
 form>input{
@@ -361,6 +367,7 @@ form>input{
     padding: 5px;
     background-color: #090D16;
     border: none;
+    color: #e5e5e5;
 }
 
 form button{
@@ -493,7 +500,6 @@ footer{
     }
 
     form input,textarea,button{
-        color: #e5e5e5;
         width: 100%;
     }
 
