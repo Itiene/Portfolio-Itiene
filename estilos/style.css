@@ -492,13 +492,13 @@ footer{
         width: 100%;
     }
 
-    form input,button{
+    form input,textarea,button{
+        color: #e5e5e5;
         width: 100%;
     }
 
     form textarea{
         padding: 20px;
-        width: 100%;
     }
 
     footer{
