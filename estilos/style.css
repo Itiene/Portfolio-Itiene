@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.open-sans-variable {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  font-variation-settings:"width" 100;
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -78,6 +85,7 @@ div#imagem{
 }
 
 div#paragrafo{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,6 +93,7 @@ div#paragrafo{
 }
 
 div#paragrafo section{
+    font-family: 'Open Sans', sans-serif;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 10px;
@@ -118,8 +127,6 @@ button#c{
 }
 button.botao:hover{
     background-color: #2563eb;
-    transform: translateY(-3px);
-    transition: .5s ease;
 }
 
 section h1{
@@ -395,7 +402,7 @@ footer{
 
     div#introducao{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         min-height: auto;
         padding: 40px 20px;
         gap: 30px;
