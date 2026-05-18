@@ -22,7 +22,7 @@ body{
 
 header{
     background-color: rgba(15, 19, 31, 0.733);
-    font-family: "BJ Cree",serif;
+    font-family: 'Mona Sans',serif;
     line-height: 1em;
     padding: 20px;
     position: sticky;
@@ -85,7 +85,6 @@ div#imagem{
 }
 
 div#paragrafo{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +92,6 @@ div#paragrafo{
 }
 
 div#paragrafo section{
-    font-family: 'Open Sans', sans-serif;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 10px;
@@ -139,10 +137,11 @@ section h1{
 }
 
 section p{
+    font-family: 'Raleway', sans-serif;
     text-align: justify;
     line-height: 1em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
+    font-family: Calibri, sans-serif;
+    font-size: 1.2rem;
 }
 
 
