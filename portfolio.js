@@ -1,28 +1,31 @@
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
-
-const fnome=document.getElementById("fnome");
-const femail=document.getElementById("femail");
-const fmessage=document.getElementById("fmessage");
 const btn=document.getElementById("btn");
+const form=document.querySelector(".formulario");
 
+form.addEventListener("submit", (evt)=>{
+    evt.preventDefault();
 
+    const fnome=document.getElementById("fnome");
+    const femail=document.getElementById("femail");
+    const fmessage=document.getElementById("fmensagem");
+    
+    const nome=fnome.value.trim();
+    const email=femail.value.trim();
+    const message=fmessage.value.trim();
 
-btn.addEventListener("click", function(event){
-    event.preventDefault(); 
-    const nome = fnome.value;
-    const email = femail.value;
-    const message = fmessage.value;
-    if(nome && email && message != ""){
-        alert("Mensagem enviada com sucesso!");
-        fnome.value = nome;
-        femail.value = email;
-        fmessage.value = message;
-    } else {
+    if(nome === "" || email === "" || message === ""){
         alert("Por favor, preencha todos os campos.");
+        return;
     }
 
-})   
+    if(message.length < 10){
+        alert("A mensagem deve conter pelo menos 10 caracteres.");
+        return;
+    }
+
+    alert("Formulário enviado com sucesso!");
+
+    fnome.value = "";
+    femail.value = "";
+    fmessage.value = "";
+
+});

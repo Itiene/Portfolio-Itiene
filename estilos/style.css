@@ -413,6 +413,7 @@ form button{
     width: 20vw;
     background: linear-gradient(45deg,#5C97FF,#9670FF);
     font-size: 1rem;
+    cursor: pointer;
 }
 
 footer{
