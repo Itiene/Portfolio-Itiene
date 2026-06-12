@@ -2,6 +2,8 @@ import gsap from "gsap"
 
 const btn=document.getElementById("btn");
 const form=document.querySelector(".formulario");
+const progresso=document.querySelectorAll(".progresso");
+
 
 form.addEventListener("submit", (evt)=>{
     evt.preventDefault();

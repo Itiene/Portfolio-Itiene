@@ -210,8 +210,17 @@ div#skills h2{
   height: 100%;
   background-color: #66bbff;
   border-radius: 4px;
+  animation-name: crescimento;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
 }
 
+@keyframes crescimento{
+    from{
+        width:0%;
+    }
+    
+}
 
 div#projetosp,#projetosac{
     margin: 10px;
