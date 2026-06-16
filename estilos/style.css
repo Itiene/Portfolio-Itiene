@@ -66,6 +66,8 @@ div#introducao{
 
 div#imagem{
     position: relative;
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
 .imagen1{
@@ -81,6 +83,19 @@ div#paragrafo{
     flex-direction: column;
     justify-content: center;
     padding: 40px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 div#paragrafo section{
@@ -178,9 +193,9 @@ div#skills h2{
 }
 
 #skill-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #skill-container .info{
