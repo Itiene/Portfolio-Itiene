@@ -477,6 +477,19 @@ footer{
 
     div#paragrafo{
         padding: 20px;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     div#paragrafo section{
@@ -509,6 +522,8 @@ footer{
         height: auto;
         display: block;
         max-width: 300px;
+        animation-name: fadeIn;
+        animation-duration: 2s;
     }
 
     #skill-container{
