@@ -123,6 +123,10 @@ button.botao{
     margin-top: 15px;
 }
 
+a>i{
+    color: white;
+}
+
 button#p{
     background: linear-gradient(45deg,#5C97FF,#9670FF);
 }
@@ -133,6 +137,7 @@ button#c{
 button.botao:hover{
     background-color: #2563eb;
 }
+
 
 section h1{
     text-align: center;
